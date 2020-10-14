@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./images/蜡笔小新.jpg" width="300" height="200"/>
+<img src="./images/蜡笔小新.jpg" width="300" height="300"/>
 </p>
 <h1 align="center">备忘录</h1>
 
