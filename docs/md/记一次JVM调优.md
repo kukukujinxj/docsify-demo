@@ -50,7 +50,7 @@ JVM参数修改如下：
 
     -Xms21G -Xmx21G -Xmn7G -Xss1024M -XX:MaxTenuringThreshold=15 -XX:MetaspaceSize=2G -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -XX:+HeapDumpBeforeFullGC -XX:+HeapDumpAfterFullGC -XX:HeapDumpPath=path
     
-启动后使用**VisualVM**持续观察堆和元空间，新生代GC正常，老年代增长缓慢还未出现GC，元空间持续增长还未稳定。持续观察一段时间，元空间稳定在2.5G左右。在第一次Full GC后，观察Log文件中的数据，Minor GC数据正常，一次Full GC持续3-4秒。并且在Full GC前后生成Dump文件，使用**Mat**工具对比Dump文件，观察对象变化后，没有查看到可以对象。
+启动后使用**VisualVM**持续观察堆和元空间，新生代GC正常，老年代增长缓慢还未出现GC，元空间持续增长还未稳定。持续观察一段时间，元空间稳定在2.5G左右。在第一次Full GC后，观察Log文件中的数据，Minor GC数据正常，一次Full GC持续3-4秒。并且在Full GC前后生成Dump文件，使用**Mat**工具对比Dump文件，观察对象变化后，没有查看到可疑对象。
 
 ## 4 其他尝试
 
