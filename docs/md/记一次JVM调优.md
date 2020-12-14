@@ -47,10 +47,12 @@ Java Web项目近一段时间频繁出现卡顿现象，每次卡顿时长也不
 最后，希望查看是否因为项目中存在异常对象导致堆空间迅速被占满而进行Full GC，因此设置参数**\-XX:+HeapDumpBeforeFullGC**（Full GC前Dump）、**\-XX:+HeapDumpAfterFullGC**（Full GC后Dump）、**\-XX:HeapDumpPath**（文件下载路径）。下载Dump文件分析工具**Mat**，对比Full GC前后Dump文件中对象变化情况。
 
 JVM参数修改如下：
-
-    -Xms21G -Xmx21G -Xmn7G -Xss1024M -XX:MaxTenuringThreshold=15 -XX:MetaspaceSize=2G -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -XX:+HeapDumpBeforeFullGC -XX:+HeapDumpAfterFullGC -XX:HeapDumpPath=path
+    
+    -Xms15g -Xmx15g -Xmn5g -Xss1024K -XX:MetaspaceSize=2g -XX:MaxTenuringThreshold=15 -Xloggc:../logs/gclogs/tomcat_gc.log -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -XX:+HeapDumpBeforeFullGC -XX:+HeapDumpAfterFullGC -XX:HeapDumpPath=../logs/gclogs
     
 启动后使用**VisualVM**持续观察堆和元空间，新生代GC正常，老年代增长缓慢还未出现GC，元空间持续增长还未稳定。持续观察一段时间，元空间稳定在2.5G左右。在第一次Full GC后，观察Log文件中的数据，Minor GC数据正常，一次Full GC持续3-4秒。并且在Full GC前后生成Dump文件，使用**Mat**工具对比Dump文件，观察对象变化后，没有查看到可疑对象。
+
+后续观察中Full GC间隔时长在两天以上。
 
 ## 4 其他尝试
 
