@@ -35,6 +35,6 @@
    
    - 在GitHub中进入项目，打开Setting页面，在当前页面找到`GitHub Pages`模块，如下图设置
    
-![](../images/github_pages.jpg)
+![](../../images/Docsify/github_pages.jpg)
 
    - 设置好GitHub后，点击保存，等待一下将会显示浏览地址，访问浏览地址即可进入网站

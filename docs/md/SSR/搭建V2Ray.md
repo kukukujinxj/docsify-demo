@@ -18,4 +18,4 @@
    
 ## 4 图示
 
-   ![](../images/v2ray.png__thumbnail)
+   ![](../../images/SSR/v2ray.png__thumbnail)

@@ -42,4 +42,4 @@
         
 ## 3 图示
 
-   ![](../images/ssr.png__thumbnail)
+   ![](../../images/SSR/ssr.png__thumbnail)
