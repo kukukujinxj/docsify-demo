@@ -30,7 +30,7 @@
 
 ## 6 挂载宿主目录webapps、logs、conf 启动tomcat容器
 
-   docker run --name tomcat -p 8080:8080 -v $PWD/webapps:/usr/local/tomcat/webapps -v $PWD/logs:/usr/local/tomcat/logs -v $PWD/conf:/usr/local/tomcat/conf -d tomcat
+   docker run --name tomcat -p 8080:8080 -v \$PWD/webapps:/usr/local/tomcat/webapps -v \$PWD/logs:/usr/local/tomcat/logs -v \$PWD/conf:/usr/local/tomcat/conf -d tomcat
 
 ## 7 部署项目
 
