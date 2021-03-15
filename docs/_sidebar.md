@@ -27,3 +27,7 @@
   * [相似度排序](md/Solr/相似度排序.md)
   
   * [性能优化](md/Solr/性能优化.md)
+  
+* Python
+
+  * [Linux离线安装cx_Oracle](md/Python/Linux离线安装cx_Oracle.md)
