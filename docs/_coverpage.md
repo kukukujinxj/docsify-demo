@@ -1,7 +1,4 @@
-<p align="center">
-<img src="./images/蜡笔小新.jpg" width="300" height="300"/>
-</p>
-<h1 align="center">备忘录</h1>
+<h1 align="center">轻轻的仰望</h1>
 
 [GitHub](https://github.com/kukukujinxj/docsify-demo)
-[开始阅读](#备忘录)
+[开始阅读](#轻轻的仰望)
