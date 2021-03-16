@@ -27,7 +27,7 @@
    
          docsify serve docs
     
-## 4 部署
+## 4 部署到GitHub
 
    - 在GitHub上新建仓库
    
@@ -38,3 +38,23 @@
 ![](../../images/Docsify/github_pages.jpg)
 
    - 设置好GitHub后，点击保存，等待一下将会显示浏览地址，访问浏览地址即可进入网站
+   
+## 5 同步到Gitee
+
+   - 登录到Gitee账户后，点击右上角的加号，其中有一个`从GitHub/GitLab导入仓库`选项，点击该选项进入导入仓库页面。
+   
+![](../../images/Docsify/文档同步到gitee.png)
+   
+   - 进入新页面后，可以点击`导入GitHub仓库`标签，可以在标签下查看到所有关联GitHub账户上的仓库，点击导入按钮，等待即可。
+   
+![](../../images/Docsify/导入到gitee库.png)
+
+## 6 部署到Gitee
+
+   - 进入到仓库中，点击`服务`按钮，选中其中`Gitee Pages`选项。
+   
+![](../../images/Docsify/进入GiteePages配置页面.png)
+
+   - 选择部署分支及部署目录，点击更新按钮即可完成部署。部署完成后将会显示网站地址。
+   
+![](../../images/Docsify/部署到Gitee.png)
